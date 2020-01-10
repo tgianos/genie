@@ -1,4 +1,4 @@
-apply plugin: "org.asciidoctor.convert"
+apply plugin: "org.asciidoctor.jvm.convert"
 
 project.parent.tasks.collectDocumentation.dependsOn project.tasks.asciidoctor
 
