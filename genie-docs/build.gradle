@@ -7,8 +7,11 @@ def genieVersion = project.version.toString()
 def isSnapshot = genieVersion.contains("SNAPSHOT")
 
 asciidoctor {
-    inputs.dir new File(project.projectDir, "/src/docs/asciidoc")
-    attributes.putAll(
+    baseDirFollowsSourceDir()
+}
+
+asciidoctorj {
+    attributes(
             [
                     "revnumber"         : genieVersion,
                     "docinfo1"          : "",

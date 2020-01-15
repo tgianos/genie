@@ -396,9 +396,9 @@ tasks.coveralls {
 task collectDocumentation(group: "documentation", description: "Copy the documentation from sub-projects") {
     dependsOn "aggregateJavadocs"
 
-    def restDocs = new File(project(":genie-web").buildDir, "asciidoc/html5")
-    def referenceDocs = new File(project(":genie-docs").buildDir, "asciidoc/html5")
-    def demoDocs = new File(project(":genie-demo").buildDir, "asciidoc/html5")
+    def restDocs = new File(project(":genie-web").buildDir, "docs/asciidoc")
+    def referenceDocs = new File(project(":genie-docs").buildDir, "docs/asciidoc")
+    def demoDocs = new File(project(":genie-demo").buildDir, "docs/asciidoc")
     def dockerCompose = new File(project(":genie-demo").projectDir, "src/main/docker/docker-compose.yml")
     def docsDir = new File(project.buildDir, "docs")
 
