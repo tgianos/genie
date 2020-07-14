@@ -1,7 +1,19 @@
 import org.apache.tools.ant.filters.ReplaceTokens
+import org.gradle.plugins.ide.idea.model.IdeaLanguageLevel
 
 apply plugin: "java-library"
 apply plugin: "org.asciidoctor.jvm.convert"
+
+idea {
+    module {
+        languageLevel = new IdeaLanguageLevel(JavaVersion.VERSION_11)
+    }
+}
+
+java {
+    sourceCompatibility JavaVersion.VERSION_11
+    targetCompatibility JavaVersion.VERSION_11
+}
 
 project.parent.tasks.collectDocumentation.dependsOn project.tasks.asciidoctor
 
