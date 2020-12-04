@@ -126,6 +126,7 @@ dependencies {
     integTestImplementation("org.springframework.cloud:spring-cloud-contract-wiremock")
     integTestImplementation("org.springframework.restdocs:spring-restdocs-core")
     integTestImplementation("org.springframework.restdocs:spring-restdocs-restassured")
+    integTestRuntimeOnly("org.springframework:spring-webflux")
 
     /*******************************
      * Agent Dependencies
