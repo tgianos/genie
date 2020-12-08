@@ -87,7 +87,7 @@ configure(javaProjects) {
             mavenBom "com.google.protobuf:protobuf-bom:${protobuf_version}"
             mavenBom "com.squareup.okhttp3:okhttp-bom:4.9.0"
             mavenBom "io.grpc:grpc-bom:1.33.1"
-            mavenBom "org.spockframework:spock-bom:2.0-M4-groovy-2.5"
+            mavenBom "org.spockframework:spock-bom:2.0-M4-groovy-3.0"
             mavenBom "org.testcontainers:testcontainers-bom:1.15.0"
         }
         dependencies {
@@ -113,7 +113,7 @@ configure(javaProjects) {
             dependency("org.apache.tika:tika-core:1.25")
             dependency("org.apache.maven:maven-artifact:3.6.3")
             dependency("org.apache.zookeeper:zookeeper:3.5.8")
-            dependency("org.codehaus.groovy:groovy-all:2.5.13")
+            dependency("org.codehaus.groovy:groovy-all:3.0.7")
             dependency("org.codehaus.janino:janino:3.1.2")
             dependency("org.dbunit:dbunit:2.7.0")
         }
